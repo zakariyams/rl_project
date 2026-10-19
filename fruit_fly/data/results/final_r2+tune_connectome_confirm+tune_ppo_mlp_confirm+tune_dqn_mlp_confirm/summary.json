@@ -1,0 +1,935 @@
+{
+  "threshold": 0.8,
+  "rolling_window": 50,
+  "conditions": [
+    {
+      "label": "PPO \u00b7 MLP",
+      "agent": "ppo_mlp",
+      "seeds": [
+        100,
+        101,
+        102,
+        103,
+        104
+      ],
+      "budget": [
+        1000000
+      ],
+      "ppo_stochastic.success_rate": [
+        0.97,
+        0.02345207879911717
+      ],
+      "ppo_stochastic.poison_rate": [
+        0.012,
+        0.010954451150103323
+      ],
+      "ppo_stochastic.timeout_rate": [
+        0.018,
+        0.021679483388678797
+      ],
+      "ppo_stochastic.successful_mean_steps": [
+        40.87145674816128,
+        4.357295460443044
+      ],
+      "ppo.success_rate": [
+        0.722,
+        0.09148770409186144
+      ],
+      "ppo.poison_rate": [
+        0.01,
+        0.01224744871391589
+      ],
+      "ppo.timeout_rate": [
+        0.26799999999999996,
+        0.09549869109050656
+      ],
+      "ppo.successful_mean_steps": [
+        36.76450693317502,
+        3.596101631758134
+      ],
+      "steps_to_threshold": [
+        105323,
+        154887,
+        208947,
+        154959,
+        89284
+      ],
+      "per_seed_sampled": {
+        "100": 0.99,
+        "101": 0.94,
+        "102": 0.99,
+        "103": 0.98,
+        "104": 0.95
+      }
+    },
+    {
+      "label": "PPO \u00b7 MLP \u00b7 ent_coef=0.002 \u00b7 learning_rate=0.00034 \u00b7 n_steps=512",
+      "agent": "ppo_mlp",
+      "seeds": [
+        100,
+        101,
+        102,
+        103,
+        104
+      ],
+      "budget": [
+        1000000
+      ],
+      "ppo_stochastic.success_rate": [
+        0.916,
+        0.047749345545253286
+      ],
+      "ppo_stochastic.poison_rate": [
+        0.054000000000000006,
+        0.028809720581775868
+      ],
+      "ppo_stochastic.timeout_rate": [
+        0.03,
+        0.0458257569495584
+      ],
+      "ppo_stochastic.successful_mean_steps": [
+        39.16317259227346,
+        7.058766846172125
+      ],
+      "ppo.success_rate": [
+        0.658,
+        0.13405222862750174
+      ],
+      "ppo.poison_rate": [
+        0.046,
+        0.020736441353327723
+      ],
+      "ppo.timeout_rate": [
+        0.296,
+        0.12300406497347965
+      ],
+      "ppo.successful_mean_steps": [
+        34.667062099666126,
+        5.963553715631067
+      ],
+      "steps_to_threshold": [
+        100874,
+        216438,
+        103043,
+        206637,
+        97723
+      ],
+      "per_seed_sampled": {
+        "100": 0.95,
+        "101": 0.97,
+        "102": 0.92,
+        "103": 0.85,
+        "104": 0.89
+      }
+    },
+    {
+      "label": "PPO \u00b7 Bio connectome",
+      "agent": "ppo_bio",
+      "seeds": [
+        100,
+        101,
+        102,
+        103,
+        104
+      ],
+      "budget": [
+        1000000
+      ],
+      "ppo_stochastic.success_rate": [
+        0.852,
+        0.10497618777608568
+      ],
+      "ppo_stochastic.poison_rate": [
+        0.04,
+        0.02
+      ],
+      "ppo_stochastic.timeout_rate": [
+        0.10800000000000001,
+        0.09311283477587824
+      ],
+      "ppo_stochastic.successful_mean_steps": [
+        52.97552964636238,
+        4.938994227101719
+      ],
+      "ppo.success_rate": [
+        0.49000000000000005,
+        0.1019803902718557
+      ],
+      "ppo.poison_rate": [
+        0.008,
+        0.013038404810405298
+      ],
+      "ppo.timeout_rate": [
+        0.502,
+        0.10281050529979903
+      ],
+      "ppo.successful_mean_steps": [
+        35.50809862960453,
+        5.728141906376361
+      ],
+      "steps_to_threshold": [
+        329917,
+        220204,
+        517779,
+        432381,
+        368803
+      ],
+      "per_seed_sampled": {
+        "100": 0.93,
+        "101": 0.97,
+        "102": 0.86,
+        "103": 0.79,
+        "104": 0.71
+      }
+    },
+    {
+      "label": "PPO \u00b7 Bio connectome \u00b7 ent_coef=0.034 \u00b7 learning_rate=0.0028 \u00b7 n_steps=2048",
+      "agent": "ppo_bio",
+      "seeds": [
+        100,
+        101,
+        102,
+        103,
+        104
+      ],
+      "budget": [
+        1000000
+      ],
+      "ppo_stochastic.success_rate": [
+        0.9099999999999999,
+        0.13453624047073706
+      ],
+      "ppo_stochastic.poison_rate": [
+        0.01,
+        0.01
+      ],
+      "ppo_stochastic.timeout_rate": [
+        0.08,
+        0.13490737563232044
+      ],
+      "ppo_stochastic.successful_mean_steps": [
+        52.63533163265307,
+        21.587609260169387
+      ],
+      "ppo.success_rate": [
+        0.604,
+        0.23136551169091732
+      ],
+      "ppo.poison_rate": [
+        0.0,
+        0.0
+      ],
+      "ppo.timeout_rate": [
+        0.396,
+        0.23136551169091735
+      ],
+      "ppo.successful_mean_steps": [
+        42.77520190084339,
+        12.119985701795612
+      ],
+      "steps_to_threshold": [
+        315342,
+        355012,
+        324084,
+        374551,
+        370329
+      ],
+      "per_seed_sampled": {
+        "100": 0.67,
+        "101": 0.98,
+        "102": 0.96,
+        "103": 0.98,
+        "104": 0.96
+      }
+    },
+    {
+      "label": "PPO \u00b7 Random connectome",
+      "agent": "ppo_random_graph",
+      "seeds": [
+        100,
+        101,
+        102,
+        103,
+        104
+      ],
+      "budget": [
+        1000000
+      ],
+      "ppo_stochastic.success_rate": [
+        0.866,
+        0.06268971207462992
+      ],
+      "ppo_stochastic.poison_rate": [
+        0.038000000000000006,
+        0.026832815729997475
+      ],
+      "ppo_stochastic.timeout_rate": [
+        0.096,
+        0.0763544366752843
+      ],
+      "ppo_stochastic.successful_mean_steps": [
+        50.405478213835735,
+        5.696480255227772
+      ],
+      "ppo.success_rate": [
+        0.55,
+        0.14352700094407325
+      ],
+      "ppo.poison_rate": [
+        0.01,
+        0.01224744871391589
+      ],
+      "ppo.timeout_rate": [
+        0.44000000000000006,
+        0.13693063937629155
+      ],
+      "ppo.successful_mean_steps": [
+        35.102736584000574,
+        5.21560808309628
+      ],
+      "steps_to_threshold": [
+        436444,
+        408184,
+        445841,
+        531228,
+        363808
+      ],
+      "per_seed_sampled": {
+        "100": 0.91,
+        "101": 0.89,
+        "102": 0.91,
+        "103": 0.86,
+        "104": 0.76
+      }
+    },
+    {
+      "label": "PPO \u00b7 Random connectome \u00b7 ent_coef=0.034 \u00b7 learning_rate=0.0028 \u00b7 n_steps=2048",
+      "agent": "ppo_random_graph",
+      "seeds": [
+        100,
+        101,
+        102,
+        103,
+        104
+      ],
+      "budget": [
+        1000000
+      ],
+      "ppo_stochastic.success_rate": [
+        0.9360000000000002,
+        0.05029910535983716
+      ],
+      "ppo_stochastic.poison_rate": [
+        0.014000000000000002,
+        0.015165750888103102
+      ],
+      "ppo_stochastic.timeout_rate": [
+        0.05,
+        0.04358898943540674
+      ],
+      "ppo_stochastic.successful_mean_steps": [
+        50.513263066294044,
+        8.01972005163009
+      ],
+      "ppo.success_rate": [
+        0.6439999999999999,
+        0.11631852818876276
+      ],
+      "ppo.poison_rate": [
+        0.0,
+        0.0
+      ],
+      "ppo.timeout_rate": [
+        0.356,
+        0.11631852818876276
+      ],
+      "ppo.successful_mean_steps": [
+        50.061484156952005,
+        13.070393552718073
+      ],
+      "steps_to_threshold": [
+        270608,
+        205778,
+        253409,
+        268060,
+        294147
+      ],
+      "per_seed_sampled": {
+        "100": 0.98,
+        "101": 0.89,
+        "102": 0.99,
+        "103": 0.94,
+        "104": 0.88
+      }
+    },
+    {
+      "label": "DQN \u00b7 MLP",
+      "agent": "dqn_mlp",
+      "seeds": [
+        100,
+        101,
+        102,
+        103,
+        104
+      ],
+      "budget": [
+        1000000
+      ],
+      "ppo_stochastic.success_rate": [
+        0.048,
+        0.033466401061363026
+      ],
+      "ppo_stochastic.poison_rate": [
+        0.008,
+        0.013038404810405298
+      ],
+      "ppo_stochastic.timeout_rate": [
+        0.9440000000000002,
+        0.03209361307176241
+      ],
+      "ppo_stochastic.successful_mean_steps": [
+        40.876666666666665,
+        39.41680338242675
+      ],
+      "ppo.success_rate": [
+        0.036,
+        0.03847076812334269
+      ],
+      "ppo.poison_rate": [
+        0.0,
+        0.0
+      ],
+      "ppo.timeout_rate": [
+        0.9640000000000001,
+        0.03847076812334268
+      ],
+      "ppo.successful_mean_steps": [
+        7.7,
+        3.4195516275285764
+      ],
+      "steps_to_threshold": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "per_seed_sampled": {
+        "100": 0.02,
+        "101": 0.02,
+        "102": 0.1,
+        "103": 0.04,
+        "104": 0.06
+      }
+    },
+    {
+      "label": "DQN \u00b7 MLP \u00b7 dqn_exploration_final_eps=0.1 \u00b7 dqn_exploration_fraction=0.46 \u00b7 dqn_learning_rate=0.00045 \u00b7 dqn_target_update_interval=5000",
+      "agent": "dqn_mlp",
+      "seeds": [
+        100,
+        101,
+        102,
+        103,
+        104
+      ],
+      "budget": [
+        1000000
+      ],
+      "ppo_stochastic.success_rate": [
+        0.052000000000000005,
+        0.029495762407505254
+      ],
+      "ppo_stochastic.poison_rate": [
+        0.012,
+        0.010954451150103323
+      ],
+      "ppo_stochastic.timeout_rate": [
+        0.9359999999999999,
+        0.040373258476372686
+      ],
+      "ppo_stochastic.successful_mean_steps": [
+        22.25,
+        12.817761114952953
+      ],
+      "ppo.success_rate": [
+        0.042,
+        0.023874672772626646
+      ],
+      "ppo.poison_rate": [
+        0.0,
+        0.0
+      ],
+      "ppo.timeout_rate": [
+        0.958,
+        0.023874672772626636
+      ],
+      "ppo.successful_mean_steps": [
+        7.4,
+        3.654525352977532
+      ],
+      "steps_to_threshold": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "per_seed_sampled": {
+        "100": 0.05,
+        "101": 0.05,
+        "102": 0.1,
+        "103": 0.04,
+        "104": 0.02
+      }
+    }
+  ],
+  "references": [
+    {
+      "label": "Random agent",
+      "key": "random",
+      "seeds": 5,
+      "success_rate": [
+        0.09,
+        0.02449489742783178
+      ],
+      "poison_rate": [
+        0.08399999999999999,
+        0.041593268686170845
+      ],
+      "timeout_rate": [
+        0.826,
+        0.051283525619832335
+      ],
+      "successful_mean_steps": [
+        59.54090909090909,
+        21.046378553520558
+      ]
+    },
+    {
+      "label": "Odor rule",
+      "key": "odor_rule",
+      "seeds": 5,
+      "success_rate": [
+        0.556,
+        0.11349008767288886
+      ],
+      "poison_rate": [
+        0.44400000000000006,
+        0.11349008767288886
+      ],
+      "timeout_rate": [
+        0.0,
+        0.0
+      ],
+      "successful_mean_steps": [
+        22.25416194800521,
+        2.3274881388132362
+      ]
+    },
+    {
+      "label": "Informed rule",
+      "key": "informed_rule",
+      "seeds": 5,
+      "success_rate": [
+        0.974,
+        0.015165750888103114
+      ],
+      "poison_rate": [
+        0.026000000000000002,
+        0.015165750888103102
+      ],
+      "timeout_rate": [
+        0.0,
+        0.0
+      ],
+      "successful_mean_steps": [
+        25.045747946426964,
+        0.9690204393261195
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "a": "PPO \u00b7 MLP",
+      "b": "PPO \u00b7 MLP \u00b7 ent_coef=0.002 \u00b7 learning_rate=0.00034 \u00b7 n_steps=512",
+      "difference": 0.05399999999999994,
+      "unpaired_p": 0.06349206349206349,
+      "paired_p": 0.125,
+      "paired_seeds": 5
+    },
+    {
+      "a": "PPO \u00b7 MLP",
+      "b": "PPO \u00b7 Bio connectome",
+      "difference": 0.118,
+      "unpaired_p": 0.031746031746031744,
+      "paired_p": 0.125,
+      "paired_seeds": 5
+    },
+    {
+      "a": "PPO \u00b7 MLP",
+      "b": "PPO \u00b7 Bio connectome \u00b7 ent_coef=0.034 \u00b7 learning_rate=0.0028 \u00b7 n_steps=2048",
+      "difference": 0.06000000000000005,
+      "unpaired_p": 0.5793650793650794,
+      "paired_p": 0.75,
+      "paired_seeds": 5
+    },
+    {
+      "a": "PPO \u00b7 MLP",
+      "b": "PPO \u00b7 Random connectome",
+      "difference": 0.10399999999999998,
+      "unpaired_p": 0.007936507936507936,
+      "paired_p": 0.0625,
+      "paired_seeds": 5
+    },
+    {
+      "a": "PPO \u00b7 MLP",
+      "b": "PPO \u00b7 Random connectome \u00b7 ent_coef=0.034 \u00b7 learning_rate=0.0028 \u00b7 n_steps=2048",
+      "difference": 0.03399999999999981,
+      "unpaired_p": 0.24603174603174602,
+      "paired_p": 0.125,
+      "paired_seeds": 5
+    },
+    {
+      "a": "PPO \u00b7 MLP",
+      "b": "DQN \u00b7 MLP",
+      "difference": 0.9219999999999999,
+      "unpaired_p": 0.007936507936507936,
+      "paired_p": 0.0625,
+      "paired_seeds": 5
+    },
+    {
+      "a": "PPO \u00b7 MLP",
+      "b": "DQN \u00b7 MLP \u00b7 dqn_exploration_final_eps=0.1 \u00b7 dqn_exploration_fraction=0.46 \u00b7 dqn_learning_rate=0.00045 \u00b7 dqn_target_update_interval=5000",
+      "difference": 0.9179999999999999,
+      "unpaired_p": 0.007936507936507936,
+      "paired_p": 0.0625,
+      "paired_seeds": 5
+    },
+    {
+      "a": "PPO \u00b7 MLP \u00b7 ent_coef=0.002 \u00b7 learning_rate=0.00034 \u00b7 n_steps=512",
+      "b": "PPO \u00b7 Bio connectome",
+      "difference": 0.06400000000000006,
+      "unpaired_p": 0.2777777777777778,
+      "paired_p": 0.125,
+      "paired_seeds": 5
+    },
+    {
+      "a": "PPO \u00b7 MLP \u00b7 ent_coef=0.002 \u00b7 learning_rate=0.00034 \u00b7 n_steps=512",
+      "b": "PPO \u00b7 Bio connectome \u00b7 ent_coef=0.034 \u00b7 learning_rate=0.0028 \u00b7 n_steps=2048",
+      "difference": 0.006000000000000116,
+      "unpaired_p": 0.9841269841269841,
+      "paired_p": 1.0,
+      "paired_seeds": 5
+    },
+    {
+      "a": "PPO \u00b7 MLP \u00b7 ent_coef=0.002 \u00b7 learning_rate=0.00034 \u00b7 n_steps=512",
+      "b": "PPO \u00b7 Random connectome",
+      "difference": 0.050000000000000044,
+      "unpaired_p": 0.23809523809523808,
+      "paired_p": 0.1875,
+      "paired_seeds": 5
+    },
+    {
+      "a": "PPO \u00b7 MLP \u00b7 ent_coef=0.002 \u00b7 learning_rate=0.00034 \u00b7 n_steps=512",
+      "b": "PPO \u00b7 Random connectome \u00b7 ent_coef=0.034 \u00b7 learning_rate=0.0028 \u00b7 n_steps=2048",
+      "difference": -0.02000000000000013,
+      "unpaired_p": 0.5714285714285714,
+      "paired_p": 0.5625,
+      "paired_seeds": 5
+    },
+    {
+      "a": "PPO \u00b7 MLP \u00b7 ent_coef=0.002 \u00b7 learning_rate=0.00034 \u00b7 n_steps=512",
+      "b": "DQN \u00b7 MLP",
+      "difference": 0.868,
+      "unpaired_p": 0.007936507936507936,
+      "paired_p": 0.0625,
+      "paired_seeds": 5
+    },
+    {
+      "a": "PPO \u00b7 MLP \u00b7 ent_coef=0.002 \u00b7 learning_rate=0.00034 \u00b7 n_steps=512",
+      "b": "DQN \u00b7 MLP \u00b7 dqn_exploration_final_eps=0.1 \u00b7 dqn_exploration_fraction=0.46 \u00b7 dqn_learning_rate=0.00045 \u00b7 dqn_target_update_interval=5000",
+      "difference": 0.864,
+      "unpaired_p": 0.007936507936507936,
+      "paired_p": 0.0625,
+      "paired_seeds": 5
+    },
+    {
+      "a": "PPO \u00b7 Bio connectome",
+      "b": "PPO \u00b7 Bio connectome \u00b7 ent_coef=0.034 \u00b7 learning_rate=0.0028 \u00b7 n_steps=2048",
+      "difference": -0.05799999999999994,
+      "unpaired_p": 0.47619047619047616,
+      "paired_p": 0.5625,
+      "paired_seeds": 5
+    },
+    {
+      "a": "PPO \u00b7 Bio connectome",
+      "b": "PPO \u00b7 Random connectome",
+      "difference": -0.014000000000000012,
+      "unpaired_p": 0.8333333333333334,
+      "paired_p": 0.6875,
+      "paired_seeds": 5
+    },
+    {
+      "a": "PPO \u00b7 Bio connectome",
+      "b": "PPO \u00b7 Random connectome \u00b7 ent_coef=0.034 \u00b7 learning_rate=0.0028 \u00b7 n_steps=2048",
+      "difference": -0.08400000000000019,
+      "unpaired_p": 0.15873015873015872,
+      "paired_p": 0.1875,
+      "paired_seeds": 5
+    },
+    {
+      "a": "PPO \u00b7 Bio connectome",
+      "b": "DQN \u00b7 MLP",
+      "difference": 0.8039999999999999,
+      "unpaired_p": 0.007936507936507936,
+      "paired_p": 0.0625,
+      "paired_seeds": 5
+    },
+    {
+      "a": "PPO \u00b7 Bio connectome",
+      "b": "DQN \u00b7 MLP \u00b7 dqn_exploration_final_eps=0.1 \u00b7 dqn_exploration_fraction=0.46 \u00b7 dqn_learning_rate=0.00045 \u00b7 dqn_target_update_interval=5000",
+      "difference": 0.7999999999999999,
+      "unpaired_p": 0.007936507936507936,
+      "paired_p": 0.0625,
+      "paired_seeds": 5
+    },
+    {
+      "a": "PPO \u00b7 Bio connectome \u00b7 ent_coef=0.034 \u00b7 learning_rate=0.0028 \u00b7 n_steps=2048",
+      "b": "PPO \u00b7 Random connectome",
+      "difference": 0.04399999999999993,
+      "unpaired_p": 0.5396825396825397,
+      "paired_p": 0.5625,
+      "paired_seeds": 5
+    },
+    {
+      "a": "PPO \u00b7 Bio connectome \u00b7 ent_coef=0.034 \u00b7 learning_rate=0.0028 \u00b7 n_steps=2048",
+      "b": "PPO \u00b7 Random connectome \u00b7 ent_coef=0.034 \u00b7 learning_rate=0.0028 \u00b7 n_steps=2048",
+      "difference": -0.026000000000000245,
+      "unpaired_p": 0.8809523809523809,
+      "paired_p": 0.9375,
+      "paired_seeds": 5
+    },
+    {
+      "a": "PPO \u00b7 Bio connectome \u00b7 ent_coef=0.034 \u00b7 learning_rate=0.0028 \u00b7 n_steps=2048",
+      "b": "DQN \u00b7 MLP",
+      "difference": 0.8619999999999999,
+      "unpaired_p": 0.007936507936507936,
+      "paired_p": 0.0625,
+      "paired_seeds": 5
+    },
+    {
+      "a": "PPO \u00b7 Bio connectome \u00b7 ent_coef=0.034 \u00b7 learning_rate=0.0028 \u00b7 n_steps=2048",
+      "b": "DQN \u00b7 MLP \u00b7 dqn_exploration_final_eps=0.1 \u00b7 dqn_exploration_fraction=0.46 \u00b7 dqn_learning_rate=0.00045 \u00b7 dqn_target_update_interval=5000",
+      "difference": 0.8579999999999999,
+      "unpaired_p": 0.007936507936507936,
+      "paired_p": 0.0625,
+      "paired_seeds": 5
+    },
+    {
+      "a": "PPO \u00b7 Random connectome",
+      "b": "PPO \u00b7 Random connectome \u00b7 ent_coef=0.034 \u00b7 learning_rate=0.0028 \u00b7 n_steps=2048",
+      "difference": -0.07000000000000017,
+      "unpaired_p": 0.1111111111111111,
+      "paired_p": 0.125,
+      "paired_seeds": 5
+    },
+    {
+      "a": "PPO \u00b7 Random connectome",
+      "b": "DQN \u00b7 MLP",
+      "difference": 0.818,
+      "unpaired_p": 0.007936507936507936,
+      "paired_p": 0.0625,
+      "paired_seeds": 5
+    },
+    {
+      "a": "PPO \u00b7 Random connectome",
+      "b": "DQN \u00b7 MLP \u00b7 dqn_exploration_final_eps=0.1 \u00b7 dqn_exploration_fraction=0.46 \u00b7 dqn_learning_rate=0.00045 \u00b7 dqn_target_update_interval=5000",
+      "difference": 0.814,
+      "unpaired_p": 0.007936507936507936,
+      "paired_p": 0.0625,
+      "paired_seeds": 5
+    },
+    {
+      "a": "PPO \u00b7 Random connectome \u00b7 ent_coef=0.034 \u00b7 learning_rate=0.0028 \u00b7 n_steps=2048",
+      "b": "DQN \u00b7 MLP",
+      "difference": 0.8880000000000001,
+      "unpaired_p": 0.007936507936507936,
+      "paired_p": 0.0625,
+      "paired_seeds": 5
+    },
+    {
+      "a": "PPO \u00b7 Random connectome \u00b7 ent_coef=0.034 \u00b7 learning_rate=0.0028 \u00b7 n_steps=2048",
+      "b": "DQN \u00b7 MLP \u00b7 dqn_exploration_final_eps=0.1 \u00b7 dqn_exploration_fraction=0.46 \u00b7 dqn_learning_rate=0.00045 \u00b7 dqn_target_update_interval=5000",
+      "difference": 0.8840000000000001,
+      "unpaired_p": 0.007936507936507936,
+      "paired_p": 0.0625,
+      "paired_seeds": 5
+    },
+    {
+      "a": "DQN \u00b7 MLP",
+      "b": "DQN \u00b7 MLP \u00b7 dqn_exploration_final_eps=0.1 \u00b7 dqn_exploration_fraction=0.46 \u00b7 dqn_learning_rate=0.00045 \u00b7 dqn_target_update_interval=5000",
+      "difference": -0.0040000000000000036,
+      "unpaired_p": 0.9047619047619048,
+      "paired_p": 1.0,
+      "paired_seeds": 5
+    }
+  ],
+  "experiments": [
+    "final_r2",
+    "tune_connectome_confirm",
+    "tune_ppo_mlp_confirm",
+    "tune_dqn_mlp_confirm"
+  ],
+  "references_per_seed": [
+    {
+      "seed": 100,
+      "random": {
+        "episodes": 100,
+        "success_rate": 0.08,
+        "mean_reward": -2.0935000000000006,
+        "poison_rate": 0.08,
+        "timeout_rate": 0.84,
+        "mean_steps": 177.51,
+        "successful_mean_steps": 45.625
+      },
+      "odor_rule": {
+        "episodes": 100,
+        "success_rate": 0.73,
+        "mean_reward": -0.8292000000000002,
+        "poison_rate": 0.27,
+        "timeout_rate": 0.0,
+        "mean_steps": 21.92,
+        "successful_mean_steps": 22.54794520547945
+      },
+      "informed_rule": {
+        "episodes": 100,
+        "success_rate": 0.98,
+        "mean_reward": 0.6517000000000001,
+        "poison_rate": 0.02,
+        "timeout_rate": 0.0,
+        "mean_steps": 23.83,
+        "successful_mean_steps": 24.102040816326532
+      }
+    },
+    {
+      "seed": 101,
+      "random": {
+        "episodes": 100,
+        "success_rate": 0.12,
+        "mean_reward": -1.8711000000000007,
+        "poison_rate": 0.04,
+        "timeout_rate": 0.84,
+        "mean_steps": 179.27,
+        "successful_mean_steps": 68.83333333333333
+      },
+      "odor_rule": {
+        "episodes": 100,
+        "success_rate": 0.6,
+        "mean_reward": -1.6369999999999996,
+        "poison_rate": 0.4,
+        "timeout_rate": 0.0,
+        "mean_steps": 24.7,
+        "successful_mean_steps": 24.033333333333335
+      },
+      "informed_rule": {
+        "episodes": 100,
+        "success_rate": 0.95,
+        "mean_reward": 0.46239999999999987,
+        "poison_rate": 0.05,
+        "timeout_rate": 0.0,
+        "mean_steps": 24.76,
+        "successful_mean_steps": 25.357894736842105
+      }
+    },
+    {
+      "seed": 102,
+      "random": {
+        "episodes": 100,
+        "success_rate": 0.11,
+        "mean_reward": -2.2334000000000005,
+        "poison_rate": 0.14,
+        "timeout_rate": 0.75,
+        "mean_steps": 164.59,
+        "successful_mean_steps": 30.454545454545453
+      },
+      "odor_rule": {
+        "episodes": 100,
+        "success_rate": 0.45,
+        "mean_reward": -2.5013,
+        "poison_rate": 0.55,
+        "timeout_rate": 0.0,
+        "mean_steps": 21.13,
+        "successful_mean_steps": 18.288888888888888
+      },
+      "informed_rule": {
+        "episodes": 100,
+        "success_rate": 0.97,
+        "mean_reward": 0.5952999999999999,
+        "poison_rate": 0.03,
+        "timeout_rate": 0.0,
+        "mean_steps": 23.47,
+        "successful_mean_steps": 23.969072164948454
+      }
+    },
+    {
+      "seed": 103,
+      "random": {
+        "episodes": 100,
+        "success_rate": 0.08,
+        "mean_reward": -2.242100000000001,
+        "poison_rate": 0.11,
+        "timeout_rate": 0.81,
+        "mean_steps": 177.4,
+        "successful_mean_steps": 82.625
+      },
+      "odor_rule": {
+        "episodes": 100,
+        "success_rate": 0.47,
+        "mean_reward": -2.41,
+        "poison_rate": 0.53,
+        "timeout_rate": 0.0,
+        "mean_steps": 24.0,
+        "successful_mean_steps": 23.872340425531913
+      },
+      "informed_rule": {
+        "episodes": 100,
+        "success_rate": 0.98,
+        "mean_reward": 0.6295999999999999,
+        "poison_rate": 0.02,
+        "timeout_rate": 0.0,
+        "mean_steps": 26.04,
+        "successful_mean_steps": 26.1734693877551
+      }
+    },
+    {
+      "seed": 104,
+      "random": {
+        "episodes": 100,
+        "success_rate": 0.06,
+        "mean_reward": -2.035400000000001,
+        "poison_rate": 0.05,
+        "timeout_rate": 0.89,
+        "mean_steps": 184.65,
+        "successful_mean_steps": 70.16666666666667
+      },
+      "odor_rule": {
+        "episodes": 100,
+        "success_rate": 0.53,
+        "mean_reward": -2.0377,
+        "poison_rate": 0.47,
+        "timeout_rate": 0.0,
+        "mean_steps": 22.77,
+        "successful_mean_steps": 22.528301886792452
+      },
+      "informed_rule": {
+        "episodes": 100,
+        "success_rate": 0.99,
+        "mean_reward": 0.6956,
+        "poison_rate": 0.01,
+        "timeout_rate": 0.0,
+        "mean_steps": 25.44,
+        "successful_mean_steps": 25.626262626262626
+      }
+    }
+  ]
+}

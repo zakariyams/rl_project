@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+
+# Trained runs and their backups are large; data/raw/ (the connectome tables) is committed.
+data/runs/
+data/snapshots/
+data/runtime/

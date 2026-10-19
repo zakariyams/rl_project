@@ -1,0 +1,222 @@
+{
+  "search": "ppo_mlp",
+  "agents": [
+    "ppo_mlp"
+  ],
+  "sampler_seed": 2026,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "tuning_steps": 300000,
+  "trials": [
+    {
+      "trial": 0,
+      "overrides": {}
+    },
+    {
+      "trial": 1,
+      "overrides": {
+        "learning_rate": 6.8e-05,
+        "ent_coef": 0.0083,
+        "n_steps": 512
+      }
+    },
+    {
+      "trial": 2,
+      "overrides": {
+        "learning_rate": 0.00017,
+        "ent_coef": 0.0012,
+        "n_steps": 1024
+      }
+    },
+    {
+      "trial": 3,
+      "overrides": {
+        "learning_rate": 0.0011,
+        "ent_coef": 0.052,
+        "n_steps": 2048
+      }
+    },
+    {
+      "trial": 4,
+      "overrides": {
+        "learning_rate": 0.00061,
+        "ent_coef": 0.00079,
+        "n_steps": 256
+      }
+    },
+    {
+      "trial": 5,
+      "overrides": {
+        "learning_rate": 0.0026,
+        "ent_coef": 0.057,
+        "n_steps": 512
+      }
+    },
+    {
+      "trial": 6,
+      "overrides": {
+        "learning_rate": 0.00096,
+        "ent_coef": 0.0035,
+        "n_steps": 2048
+      }
+    },
+    {
+      "trial": 7,
+      "overrides": {
+        "learning_rate": 0.0013,
+        "ent_coef": 0.0022,
+        "n_steps": 1024
+      }
+    },
+    {
+      "trial": 8,
+      "overrides": {
+        "learning_rate": 0.00011,
+        "ent_coef": 0.00048,
+        "n_steps": 512
+      }
+    },
+    {
+      "trial": 9,
+      "overrides": {
+        "learning_rate": 0.00034,
+        "ent_coef": 0.002,
+        "n_steps": 512
+      }
+    },
+    {
+      "trial": 10,
+      "overrides": {
+        "learning_rate": 3.2e-05,
+        "ent_coef": 0.0022,
+        "n_steps": 2048
+      }
+    },
+    {
+      "trial": 11,
+      "overrides": {
+        "learning_rate": 0.00016,
+        "ent_coef": 0.00039,
+        "n_steps": 1024
+      }
+    },
+    {
+      "trial": 12,
+      "overrides": {
+        "learning_rate": 0.00022,
+        "ent_coef": 0.00079,
+        "n_steps": 1024
+      }
+    }
+  ],
+  "ranking": [
+    {
+      "trial": 9,
+      "complete": true,
+      "score": 0.8766666666666666,
+      "per_agent": {
+        "ppo_mlp": 0.8766666666666666
+      }
+    },
+    {
+      "trial": 0,
+      "complete": true,
+      "score": 0.8533333333333334,
+      "per_agent": {
+        "ppo_mlp": 0.8533333333333334
+      }
+    },
+    {
+      "trial": 12,
+      "complete": true,
+      "score": 0.7999999999999999,
+      "per_agent": {
+        "ppo_mlp": 0.7999999999999999
+      }
+    },
+    {
+      "trial": 11,
+      "complete": true,
+      "score": 0.7966666666666667,
+      "per_agent": {
+        "ppo_mlp": 0.7966666666666667
+      }
+    },
+    {
+      "trial": 2,
+      "complete": true,
+      "score": 0.7633333333333333,
+      "per_agent": {
+        "ppo_mlp": 0.7633333333333333
+      }
+    },
+    {
+      "trial": 8,
+      "complete": true,
+      "score": 0.63,
+      "per_agent": {
+        "ppo_mlp": 0.63
+      }
+    },
+    {
+      "trial": 1,
+      "complete": true,
+      "score": 0.47000000000000003,
+      "per_agent": {
+        "ppo_mlp": 0.47000000000000003
+      }
+    },
+    {
+      "trial": 6,
+      "complete": true,
+      "score": 0.37333333333333335,
+      "per_agent": {
+        "ppo_mlp": 0.37333333333333335
+      }
+    },
+    {
+      "trial": 7,
+      "complete": true,
+      "score": 0.3,
+      "per_agent": {
+        "ppo_mlp": 0.3
+      }
+    },
+    {
+      "trial": 3,
+      "complete": true,
+      "score": 0.24999999999999997,
+      "per_agent": {
+        "ppo_mlp": 0.24999999999999997
+      }
+    },
+    {
+      "trial": 4,
+      "complete": true,
+      "score": 0.14333333333333334,
+      "per_agent": {
+        "ppo_mlp": 0.14333333333333334
+      }
+    },
+    {
+      "trial": 10,
+      "complete": true,
+      "score": 0.12666666666666668,
+      "per_agent": {
+        "ppo_mlp": 0.12666666666666668
+      }
+    },
+    {
+      "trial": 5,
+      "complete": true,
+      "score": 0.07,
+      "per_agent": {
+        "ppo_mlp": 0.07
+      }
+    }
+  ],
+  "winner": 9
+}
